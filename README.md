@@ -4,8 +4,6 @@
 
 This is a repository for Next Auth v5 - Advanced Guide (2024)
 
-[VIDEO TUTORIAL](https://youtu.be/1MTyCvS05V4)
-
 Key Features:
 - 🔐 Next-auth v5 (Auth.js)
 - 🚀 Next.js 14 with server actions
@@ -47,13 +45,13 @@ Key Features:
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next-auth-v5-advanced-guide.git
+git clone https://github.com/sonwjnn/sonwin-auth-tutorial.git
 ```
 
 ### Install packages
 
 ```shell
-npm i
+yarn install
 ```
 
 ### Setup .env file
@@ -85,5 +83,5 @@ npx prisma db push
 ### Start the app
 
 ```shell
-npm run dev
+yarn dev
 ```
