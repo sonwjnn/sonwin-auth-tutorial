@@ -1,5 +1,7 @@
 'use client'
 
+import { LoginForm } from '@/components/auth/login-form'
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog'
 import { useRouter } from 'next/navigation'
 
 interface LoginButtonProps {
@@ -20,8 +22,16 @@ export const LoginButton = ({
   }
 
   if (mode === 'modal') {
-    return <span>TODO: Implement modal</span>
+    return (
+      <Dialog>
+        <DialogTrigger asChild={asChild}>{children}</DialogTrigger>
+        <DialogContent className="w-auto border-none bg-transparent p-0">
+          <LoginForm />
+        </DialogContent>
+      </Dialog>
+    )
   }
+
   return (
     <span onClick={onClick} className="cursor-pointer">
       {children}

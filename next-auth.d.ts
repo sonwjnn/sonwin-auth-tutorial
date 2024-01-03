@@ -9,7 +9,7 @@ declare module '@auth/core/types' {
       isTwoFactorEnabled: boolean
       isOAuth: boolean
     } & DefaultSession['user']
-  }
+  } 
 }
 
 declare module '@auth/core/jwt' {

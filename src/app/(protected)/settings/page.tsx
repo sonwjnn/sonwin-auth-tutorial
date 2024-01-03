@@ -3,6 +3,7 @@
 import { settings } from '@/actions/settings'
 import { FormError } from '@/components/form-error'
 import { FormSuccess } from '@/components/form-success'
+import { Spinner } from '@/components/spinner'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
 import {
@@ -205,6 +206,7 @@ const SettingsPage = () => {
             <FormError message={error} />
             <FormSuccess message={success} />
             <Button disabled={isPending} type="submit">
+              {isPending ? <Spinner className="mr-2" /> : null}
               Save
             </Button>
           </form>
